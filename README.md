@@ -5,6 +5,10 @@ Attempts to clamp the amount of common infected alive at any one time to `z_comm
 
 When the amount of common infected alive is greater than the default `z_common_limit` + leniency, a timer (3.0 seconds) is created. When that timer expires, common infected over the `z_common_limit` will be deleted and a **second timer** is created. During that second timer, any common infected that spawn that would push the count of common infected over the `z_common_limit` will be deleted. If no deletions have taken place after the set amount of time (5.0 seconds), then the plugin will stop deleting common infected. It will revert back to it's default state of watching for `z_common_limit` + leniency amounts.
 
+#### Plugin commands:
+- `sm_common_amt` Prints the status of plugin, as well as current / max common infected.
+
+#### Todo:
 - [ ] \(Optional) Use kill flags instead of entity deletion.
 - [ ] \(Optional) Loop from highest entity count instead of lowest entity count on initial loop.
 

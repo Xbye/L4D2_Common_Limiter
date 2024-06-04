@@ -41,7 +41,7 @@ public void OnPluginStart()
 
     directorLeniency = 5;
 
-    RegAdminCmd("sm_common_limit", AdminLimitRply, ADMFLAG_GENERIC);
+    RegAdminCmd("sm_common_amt", AdminLimitRply, ADMFLAG_GENERIC);
 }
 
 void ConVarChanged_Cvars(Handle convar, const char[] oldValue, const char[] newValue)
