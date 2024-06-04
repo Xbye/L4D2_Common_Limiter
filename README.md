@@ -1,2 +1,2 @@
-# L4D2_Common_Limiter
+# L4D2_Max_Common_spawn
 Limits number of common infected to 'z_common_limit', attempts to avoid vanilla director conflict.
